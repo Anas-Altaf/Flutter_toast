@@ -11,7 +11,7 @@ A Custom Toast Message Demo
 + Import ```import 'custom_toast.dart';```
 ### Usage
 + Add
- ```bash
+ ```dart
    @override
   void initState() {
     super.initState();
