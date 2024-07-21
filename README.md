@@ -22,4 +22,4 @@ A Custom Toast Message Demo
    ```
 # Credits
 + [Anas-Altaf](https://github.com/Anas-Altaf)
- Thanks for using.
+- Thanks for using.
