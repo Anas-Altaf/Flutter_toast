@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'flutter_toast.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -10,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Toast Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Toast Demo'),
     );
   }
 }
@@ -36,6 +38,14 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _counter++;
     });
+    ToastUtil.showErrorToast('Current Count : $_counter');
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    //Add in initState Method
+    ToastUtil.init(context);
   }
 
   @override
