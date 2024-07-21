@@ -17,5 +17,9 @@ A Custom Toast Message Demo
     super.initState();
     ToastUtil.init(context);
   }
- ```bash
- 
+  //Usage in a Function
+    ToastUtil.showErrorToast('Current Count : $_counter');
+   ```
+# Credits
++ [Anas-Altaf](https://github.com/Anas-Altaf)
+ Thanks for using.
